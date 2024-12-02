@@ -304,7 +304,8 @@ h6 {
   padding: 40px 0;
   position: relative;
 }
-.footer .container{
+
+.footer .container {
   padding: 0px 70px;
 }
 
@@ -322,10 +323,12 @@ h6 {
 .footer ul li a {
   color: white;
 }
+
 .footer ul li a:hover {
   color: black;
 }
-.footer .copyright{
+
+.footer .copyright {
   display: flex;
   float: left;
   justify-content: space-between;
@@ -338,10 +341,11 @@ h6 {
   font-weight: 400;
   margin-left: 20px;
 }
-/* .footer .social-links {
-  float: right !important; 
 
-} */
+.footer .social-links {
+ justify-content: end; 
+
+}
 
 .footer .social-links a {
   display: flex;
@@ -363,17 +367,32 @@ h6 {
   border-color: var(--accent-color);
   background-color: #78A53D;
 }
+.footer .social-links .social-icon{
+  height: 27.73px;
+  width: 27.73px;
+  background-color: white;
+  border-radius: 138.64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (max-width: 768px) {
   .footer .footer-bottom {
     display: block;
   }
-  .footer .container{
+
+  .footer .container {
     padding: 0;
   }
-  .footer .copyright{
+
+  .footer .copyright {
     display: block;
   }
+    .footer .social-links {
+      justify-content: start;
+  
+    }
 }
 
 /*--------------------------------------------------------------
@@ -539,7 +558,7 @@ section,
   margin: 0;
   font-weight: bold;
   line-height: 77px;
-  color: #608431;
+  color: #A2CF67;
   transition: transform 1s ease-in-out;
 }
 
@@ -612,7 +631,7 @@ section,
   height: 100%;
   margin-top: 0;
 }
- 
+
 
 @media (max-width: 768px) {
   .hero {
@@ -622,13 +641,27 @@ section,
     background-color: #E9F4DB;
   }
 
+  .hero .hero-content {
+    margin-bottom: 60px;
+  }
+
   .hero h2 {
     font-size: 24px;
   }
 
+  .hero .hero-content h5 {
+    font-size: 20px;
+
+  }
+
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
   .hero .btn-get-started,
   .hero .btn-watch-video {
-  
+
     padding: 4px 8px;
   }
 
@@ -651,9 +684,10 @@ section,
 # About Section
 --------------------------------------------------------------*/
 
-.about .container{
-  padding:  0px 70px;
+.about .container {
+  padding: 0px 70px;
 }
+
 .about .about-images img {
   border-radius: 200px;
   object-fit: cover;
@@ -666,8 +700,8 @@ section,
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-left: 10px;
-  
+  padding-left: 14px;
+
   /* Add padding for proper alignment */
 }
 
@@ -713,27 +747,41 @@ section,
   margin-right: 10px;
   z-index: 1;
 }
-.circle + div{
-   float: left;
-   margin-left: 70px;
-   margin-top: -40px;
+
+.circle+div {
+  float: left;
+  margin-left: 70px;
+  margin-top: -40px;
 }
+
 /* Text styling */
 .step p {
   margin: 0;
   font-size: 20px;
   font-weight: 500;
 }
+/* @media (max-width: 1200px) {
+  .line{
+    padding-left: 14px;
+  }
+}
+@media (min-width:365px) and (max-width: 768px) {
+  .line{
+    padding-left: 0px;
+  } 
+  
+} */
 
 @media (max-width: 768px) {
-  .about .container{
+  .about .container {
     padding: 0px 50px;
   }
+
   .about .about-images img {
     border-radius: 100px;
     width: 100%;
     height: auto;
-    
+
   }
 
   .about .content {
@@ -753,7 +801,7 @@ section,
     font-size: 15px;
   }
 
-  .line{
+  .line {
     padding-left: 0px;
   }
 
@@ -772,8 +820,11 @@ section,
   font-size: 48px;
   font-weight: 700;
   color: #608431;
-  margin: 30px 0 60px 0;
+  margin: 30px 0 50px 0;
+}
 
+.title p {
+  font-size: 20px;
 }
 
 .services {
@@ -827,6 +878,15 @@ section,
 
   .services .service-item:hover h3 {
     color: var(--accent-color);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .title h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0px 0 50px 0;
   }
 }
 
@@ -910,7 +970,8 @@ section,
   color: white;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
 }
-.call-to-action .img img{
+
+.call-to-action .img img {
   border-radius: 200px;
   object-fit: cover;
 }
@@ -919,10 +980,14 @@ section,
   .call-to-action .container {
     padding: 50px;
   }
+
   .call-to-action .img img {
     border-radius: 100px;
     width: 100%;
     height: auto;
+  }
+  .call-to-action .container h3 {
+    font-size: 40px;
   }
 }
 
@@ -947,9 +1012,11 @@ section,
   box-sizing: content-box;
 
 }
-.testimonial .quote-div{
+
+.testimonial .quote-div {
   height: 120px;
 }
+
 .testimonial .testimonial-item .quote-icon {
   position: absolute;
   top: -50px;
@@ -995,7 +1062,9 @@ section,
     left: 0;
     top: 0;
   }
-
+  .testimonial .container .testimonial-subtitle {
+    margin-bottom: 50px;
+  }
   .testimonial .testimonial-item {
     margin: 0 0 20px 0;
     padding: 40px 0;
