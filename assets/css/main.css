@@ -607,6 +607,12 @@ section,
   transform: translateY(0);
 }
 
+/* @media only screen and (max-width: 768px) {
+  #second-h2 {
+    display: none;
+  }
+} */
+
 @media (max-width: 768px) {
   .scrolling-text-container {
     display: flex;
@@ -630,9 +636,9 @@ section,
     content: "Talent Mobility";
   }
 
-  #second-h2::before {
-    content: "&  Settlement";
-  }
+  /* #second-h2::before {
+    content: " Settlement";
+  } */
 
   /* #second-h2::after {
     content: "& Settlement";
