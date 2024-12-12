@@ -768,8 +768,8 @@ section,
 # About Section
 --------------------------------------------------------------*/
 
-.about .container {
-  padding: 0px 70px;
+.about{
+  margin: 0px 70px;
 }
 
 .about .about-images img {
@@ -782,7 +782,7 @@ section,
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-left: 20px;
+  padding-left: 15px;
 
   /* Add padding for proper alignment */
 }
@@ -843,17 +843,6 @@ section,
   font-weight: 500;
 }
 
-/* @media (max-width: 1200px) {
-  .line{
-    padding-left: 14px;
-  }
-}
-@media (min-width:365px) and (max-width: 768px) {
-  .line{
-    padding-left: 0px;
-  } 
-  
-} */
 
 @media (max-width: 768px) {
   .about {
@@ -862,6 +851,10 @@ section,
 
   .about .container {
     padding: 0px;
+  }
+  .about .content{
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .about .about-images img {
@@ -874,6 +867,7 @@ section,
   }
   .about .about-images {
     order: 2;
+    padding: 0;
   }
 
   .about .content {
@@ -891,6 +885,7 @@ section,
   }
 
 }
+
 
 /*--------------------------------------------------------------
 # Services Section
@@ -979,6 +974,10 @@ section,
     margin: 0px 20px;
   }
 
+  .services .container{
+    padding: 0px;
+  }
+
   .services .service-item {
     padding: 32px 24px;
   }
@@ -1065,11 +1064,15 @@ section,
 /*--------------------------------------------------------------call-to-action
 # Call To Action Section
 --------------------------------------------------------------*/
+.call-to-action {
+  margin: 22px 70px 96px 70px;
+}
+
 .call-to-action .container {
   padding: 70px;
 }
 
-.call-to-action .container h3 {
+.call-to-action .container-fluid h3 {
   font-size: 48px;
   font-weight: 700;
   color: #608431;
@@ -1095,6 +1098,7 @@ section,
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
 }
 
+
 .call-to-action .img img {
   border-radius: 200px;
   object-fit: cover;
@@ -1104,20 +1108,27 @@ section,
   .call-to-action{
     margin: 0px 20px;
   }
-  .call-to-action .container {
+ 
+  .call-to-action .content{
     padding: 0px;
+
+  }
+
+  .call-to-action .img {
+    width: 100%;
   }
 
   .call-to-action .img img {
     border-radius: 180px;
-    width: 350px;
-    height: 550px;
+    width: 100%;
+    /* width: 350px;
+    height: 550px; */
     flex-shrink: 0;
     margin-right: 0;
     margin-bottom: 48px;
   }
 
-  .call-to-action .container h3 {
+  .call-to-action .container-fluid h3 {
     font-size: 32px;
   }
   .call-to-action .cta-btn {
@@ -1126,6 +1137,7 @@ section,
   }
   .call-to-action .cta-image{
     padding: 0 ;
-    margin-left: 0
+    margin: 30px 0 0 0;
+    width: 100%;
   }
 }
