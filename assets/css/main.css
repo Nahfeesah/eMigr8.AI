@@ -600,7 +600,7 @@ section,
 }
 
 .scrolling-text-container .heading.down {
-  transform: translateY(100%);
+  transform: translateY(150%);
 }
 
 .scrolling-text-container .heading.center {
@@ -793,26 +793,27 @@ section,
   position: absolute;
   top: 0;
   left: 8%;
-  /* Align the line with the center of the circles */
   transform: translateX(-50%);
-  /* Center it exactly */
   width: 2px;
   height: 100%;
   background-color: #608431;
-  /* Match the circle's color */
   z-index: 0;
-  /* Place behind the circles */
 }
 
-/* Individual step */
+
+
+
+/* Individual step */ 
 .step {
   display: flex;
   align-items: center;
   margin: 10px 0;
-  /* background-color: blue; */
+  
 }
 
-/* Circle for numbering */
+
+
+/* Circle for numbering  */ 
 .circle {
   background-color: #608431;
   color: white;
@@ -820,7 +821,6 @@ section,
   font-size: 20px;
   width: 52px;
   height: 52px;
-  /* padding: 26px; */
   position: relative;
   display: flex;
   align-items: center;
@@ -829,6 +829,7 @@ section,
   margin-right: 10px;
   z-index: 1;
 }
+
 
 .circle+div {
   float: left;
