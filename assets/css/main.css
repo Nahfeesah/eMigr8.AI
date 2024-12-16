@@ -104,17 +104,6 @@ h6 {
   margin: 0px 10px;
 }
 
-.header .logo h1 {
-  font-size: 30px;
-  margin: 0;
-  font-weight: 700;
-  color: var(--heading-color);
-}
-
-.header .logo h1 span {
-  color: var(--accent-color);
-}
-
 .scrolled .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
@@ -299,12 +288,9 @@ h6 {
   color: white;
   background-color: #486325;
   font-size: 14px;
-  padding: 40px 0;
+  
   position: relative;
-}
-
-.footer .container {
-  padding: 0px 70px;
+  padding: 40px 70px;
 }
 
 .footer h5 {
