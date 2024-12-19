@@ -309,7 +309,7 @@ h6 {
 }
 
 .footer ul li a:hover {
-  color: black;
+  color:#71c55d;
 }
 .footer .footer-tagline {
   color: white;
@@ -642,7 +642,7 @@ section,
 }
 
 .hero .btn-watch-video {
-  font-size: 16px;
+  font-size: 20px;
   transition: 0.5s;
   margin-left: 30px;
   font-weight: 600;
