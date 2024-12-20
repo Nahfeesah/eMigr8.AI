@@ -88,12 +88,12 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
+  
   color: var(--default-color);
   background-color: var(--background-color);
-
   transition: all 0.5s;
   z-index: 997;
-  height: 80px;
+  height: 95px;
 }
 
 
@@ -101,7 +101,7 @@ h6 {
 .header .logo img {
   width: 180px;
   height: auto;
-  margin: 0px 10px;
+  /* margin: 0px 10px; */
 }
 
 .scrolled .header {
@@ -111,13 +111,19 @@ h6 {
 @media (max-width: 768px) {
   .header {
     position: sticky;
-    height: 40px;
+    height: 80px;
+    padding: 0px 20px;
   }
-
-  .header .logo img {
-    max-width: 40%;
-    margin: 10px 20px;
+  .header .container-fluid{
+    padding: 0;
+    margin: 0;
   }
+  
+.header .logo img {
+  max-width: 129px;
+  height: 17.5%;
+  margin: 10px 0 0 0;
+}
 }
 
 /*--------------------------------------------------------------
@@ -125,6 +131,7 @@ h6 {
 --------------------------------------------------------------*/
 /* Navmenu - Desktop */
 @media (min-width: 1200px) {
+  
   .navmenu {
     padding: 0;
   }
@@ -280,6 +287,7 @@ h6 {
     display: block;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Global Footer
