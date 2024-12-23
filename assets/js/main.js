@@ -128,5 +128,30 @@
   window.onload = init;
 
 
+  // dynamically download the app 
+  // Function to handle dynamic redirection
+  function redirectToPlatform() {
+    const userAgent = navigator.userAgent || window.opera;
+
+    if (/android/i.test(userAgent)) {
+      // Redirect to Android link
+      window.open('https://play.google.com/store/apps/details?id=com.bincom.emigr8app&amp;pcampaignid=web_share&amp;pli=1', '_blank');
+    } else if (/iPad|iPhone|iPod/.test(userAgent)) {
+      // Redirect to iOS link
+      window.open('https://apps.apple.com/ng/app/emigr8-tech-visa/id6480083188', '_blank');
+    } else {
+      // Redirect to web link (for desktop or unsupported devices)
+      window.open('https://app.emigr8visa.com', '_blank');
+    }
+  }
+
+  // Attach the function to the link
+  document.getElementById('dynamic-download').addEventListener('click', function (e) {
+    e.preventDefault(); // Prevent default behavior of the link
+    redirectToPlatform(); // Call the redirection function
+  });
+
+
+
 
 })();
