@@ -302,6 +302,27 @@ h6 {
     transform: rotate(180deg);
   }
 
+  .navmenu .dropdown ul {
+    position: static;
+    display: none;
+    z-index: 99;
+    padding: 10px 0;
+    margin: 10px 20px;
+    background-color: var(--nav-dropdown-background-color);
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    box-shadow: none;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .navmenu .dropdown ul ul {
+    background-color: rgba(33, 37, 41, 0.1);
+  }
+
+  .navmenu .dropdown>.dropdown-active {
+    display: block;
+    background-color: rgba(33, 37, 41, 0.03);
+  }
+
   .mobile-nav-active {
     overflow: hidden;
   }
@@ -566,7 +587,7 @@ section,
 .hero {
   width: 100%;
   position: relative;
-  padding: 100px 0 100px 0;
+  padding: 100px 0;
   background-color: #E9F4DB;
   background-image: url("../img/new-bgg.jpeg");
   background-repeat: no-repeat;
@@ -1155,3 +1176,82 @@ section,
     width: 100%;
   }
 }
+
+/*--------------------------------------------------------------Pricing Page
+# Pricing Page
+--------------------------------------------------------------*/
+.pricing{
+    width: 100%;
+    position: relative;
+    padding: 120px 0 60px;
+    background-color: #F5F5F5;
+}
+.title-pricing{
+  max-width: 800px;
+  text-align: center;
+  padding-bottom: 60px;
+  
+}
+.pricing .title h5 {
+    
+color: #608431;
+font-size: 16px;
+font-weight: 700;
+text-transform: uppercase;
+}
+.pricing .title h2 {
+font-size: 48px;
+font-weight: 700;
+color: #608431;
+margin: 24px 0;
+}
+.pricing .title p{
+font-size: 1.25rem;
+}
+        
+.script-box{        
+  text-align: center;
+  margin: auto;
+}
+.discover{
+  padding-top: 60px;
+  text-align: center;
+
+}
+.discover h3{
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 26px;
+  transition: ease-in-out 0.3s;
+  color: #608431;
+  }
+
+
+.btn-discover{
+  color: #1D280F;
+  background-color: #90C649;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 20px;
+  transition: 0.5s;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+}
+.btn-discover:hover{
+  background: #608431;
+  color: white;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px){
+  .pricing {
+    padding: 60px 0 60px;
+    
+  }
+  .title-pricing {
+    max-width: 20rem;
+  }
+} 
+
