@@ -1190,32 +1190,35 @@ section,
   max-width: 800px;
   text-align: center;
   padding-bottom: 60px;
-  
-}
-.pricing .title h5 {
     
-color: #608431;
-font-size: 16px;
-font-weight: 700;
-text-transform: uppercase;
+}
+.pricing .title h5 {  
+  color: #608431;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .pricing .title h2 {
-font-size: 48px;
-font-weight: 700;
-color: #608431;
-margin: 24px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: #608431;
+  margin: 24px 0;
 }
 .pricing .title p{
-font-size: 1.25rem;
+  font-size: 1.25rem;
 }
-        
-.script-box{        
-  text-align: center;
+.script-box{
+  max-width: 1100px;
   margin: auto;
 }
 .discover{
+  margin: 60px auto;
   padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #fff;
+  max-width: 1100px;
   text-align: center;
+  border-bottom: 1px solid #608431;
 
 }
 .discover h3{
@@ -1235,7 +1238,7 @@ font-size: 1.25rem;
   font-size: 20px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 16px 32px;
+  padding: 12px 24px;
   border-radius: 20px;
   transition: 0.5s;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
@@ -1245,13 +1248,60 @@ font-size: 1.25rem;
   color: white;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
 }
+.specific-package{
+  margin: 60px auto 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  max-width: 1100px;
+  text-align: center;
+
+}
+.specific-package h2{
+  font-size: 36px;
+    font-weight: 700;
+    color: #608431;
+    margin: auto;
+    max-width: 800px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.specific-package p{
+  font-size: 1.25rem;
+  
+}
+
+.arrow-down {
+  font-size: 2rem;
+  color: #608431;
+  display: inline-block;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
 @media (max-width: 768px){
-  .pricing {
-    padding: 60px 0 60px;
-    
+  .pricing{
+    padding: 60px 0 60px; 
   }
   .title-pricing {
     max-width: 20rem;
+  }
+  .discover{
+   padding-left: 40px;
+   padding-right: 40px;
+  }
+  .specific-package{
+    padding-left: 40px;
+    padding-right: 40px;
   }
 } 
 
